@@ -1,0 +1,14 @@
+.glow {
+  color: #7B07A0;
+  border: 0.12em solid;
+  border-radius: 0.2em;
+  border-color: #7B07A0;
+  padding: 0.2em 1em 0.2em 1em;
+  font-size: 70px;
+  font-family: Ubuntu, "times new roman", times, roman, serif;
+  text-align: center;
+
+  text-shadow: 0 0 0.150em #7B07A0;
+
+}
+
