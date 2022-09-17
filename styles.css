@@ -1,21 +1,30 @@
-
-.glow {
-  color: #7B07A0;
-  padding: 0.1em 1em 0.1em 1em;
-  font-size: 1.6em;
-  font-family: Ubuntu, "times new roman", times, roman, serif;
-  text-align: center;
-
-  /*Border*/
-
-  border: 0.18em solid;
-  border-radius: 0.2em;
-  border-color: #7B07A0;
-  width: 15em;
-  margin: auto;
-  margin-bottom: 500em;
+/*Border*/
+.border {
+  border:0.4em solid #fff;
   box-shadow: inset 0 0 0.2em #7B07A0, 0 0 0.5em #7B07A0;
+  border-radius: 0.8em;
+  max-width: 38em;
+  margin: auto;
+  text-align: center;
+  padding: 0.2em;
   position: relative;
+}
+
+.border {
+  -webkit-animation: neon-border 1.5s ease-in-out infinite alternate;
+  animation: neon-border 1.5s ease-in-out infinite alternate;
+  color: #ffffff;
+}
+
+@keyframes neon-border {    
+  from {
+    box-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 
+    0 0 18px #cb00ff, 0 0 18px #cb00ff, 0 0 24px #cb00ff, 0 0 24px #cb00ff, 0 0 28px #cb00ff;
+  }
+  to {
+    box-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 
+    0 0 10px #cb00ff, 0 0 10px #cb00ff, 0 0 15px #cb00ff, 0 0 15px #cb00ff, 0 0 20px #cb00ff;
+  }
 }
 
 /*Shadow*/
@@ -28,19 +37,26 @@
   width: 100%;
   height: 100%;
 
-  transform: perspective(1em) rotateX(40deg) scale(1, 0.32);
-  filter: blur(1.3em);
-  opacity: 0.25;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.3);
+  filter: blur(1em);
+  opacity: 0.5;
 }
 
-/*Title*/
+/*Neon effect*/
 .glow {
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
+  color: #7B07A0;
+  font-size: 5em; 
+  font-family: 'Iceland', cursive;
+  /*Ubuntu font: Ubuntu, "times new roman", times, roman, serif;*/
+}
+
+.glow {
+  -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+  animation: neon 1.5s ease-in-out infinite alternate;
   color: #ffffff;
 }
 
-@keyframes neon1 {    
+@keyframes neon {    
   from {
     text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 40px #cb00ff, 0 0 70px #cb00ff, 0 0 80px #cb00ff, 0 0 100px #cb00ff, 0 0 150px #cb00ff;
   }
@@ -49,8 +65,3 @@
   }
 }
 
-
-
- /*text-shadow: 
-    0 0 50px #7B07A0;
-*/
