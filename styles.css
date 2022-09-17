@@ -1,10 +1,12 @@
-/*Border*/
+/*Border neon effect*/
 .border {
+
   border:0.4em solid #fff;
   box-shadow: inset 0 0 0.2em #7B07A0, 0 0 0.5em #7B07A0;
   border-radius: 0.8em;
   max-width: 38em;
   margin: auto;
+  margin-top: 2.5em;
   text-align: center;
   padding: 0.2em;
   position: relative;
@@ -27,7 +29,7 @@
   }
 }
 
-/*Shadow*/
+/*Shadow bottom*/
 .glow::before{
   content: "";
   position: absolute;
@@ -42,7 +44,7 @@
   opacity: 0.5;
 }
 
-/*Neon effect*/
+/*Title neon effect*/
 .glow {
   color: #7B07A0;
   font-size: 5em; 
