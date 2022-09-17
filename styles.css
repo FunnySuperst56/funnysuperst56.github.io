@@ -1,32 +1,46 @@
+
 .glow {
   color: #7B07A0;
-  padding: 0.2em 1em 0.2em 1em;
-  font-size: 12em;
+  padding: 0.1em 1em 0.1em 1em;
+  font-size: 1.6em;
   font-family: Ubuntu, "times new roman", times, roman, serif;
   text-align: center;
 
   /*Border*/
-  border: 0.12em solid;
+
+  border: 0.18em solid;
   border-radius: 0.2em;
   border-color: #7B07A0;
-  width: 8em;
+  width: 15em;
   margin: auto;
-  margin-bottom: 500px;
+  margin-bottom: 500em;
   box-shadow: inset 0 0 0.2em #7B07A0, 0 0 0.5em #7B07A0;
   position: relative;
 }
 
+/*Shadow*/
+.glow::before{
+  content: "";
+  position: absolute;
+  background: #cb00ff;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.32);
+  filter: blur(1.3em);
+  opacity: 0.25;
+}
 
-/*Name*/
-
+/*Title*/
 .glow {
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate;
   color: #ffffff;
 }
 
-@keyframes neon1 {
+@keyframes neon1 {    
   from {
     text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 40px #cb00ff, 0 0 70px #cb00ff, 0 0 80px #cb00ff, 0 0 100px #cb00ff, 0 0 150px #cb00ff;
   }
@@ -34,7 +48,6 @@
     text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 40px #cb00ff, 0 0 35px #cb00ff, 0 0 40px #cb00ff, 0 0 50px #cb00ff, 0 0 75px #cb00ff;
   }
 }
-
 
 
 
