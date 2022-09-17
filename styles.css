@@ -1,6 +1,5 @@
 /*Border neon effect*/
 .border {
-
   border:0.4em solid #fff;
   box-shadow: inset 0 0 0.2em #7B07A0, 0 0 0.5em #7B07A0;
   border-radius: 0.8em;
@@ -76,10 +75,119 @@
   -webkit-text-reflect: below 5em linear-gradient(transparent, rgba(255, 255, 255, 0.1));
 }
 
+/*Container list*/
+.container-list {
+  border:0.4em solid #fff;
+  box-shadow: inset 0 0 0.2em #7B07A0, 0 0 0.5em #7B07A0;
+  border-radius: 0.8em;
+  margin: auto;
+  margin-top: 18em;
+  max-width: 30em;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+  position: relative;
+}
 
+.container-list {
+  -webkit-animation: neon-container 1.5s ease-in-out infinite alternate;
+  animation: neon-container 1.5s ease-in-out infinite alternate;
+  color: #ffffff;
+}
 
+@keyframes neon-container {    
+  from {
+    box-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 
+    0 0 15px #cb00ff, 0 0 15px #cb00ff, 0 0 20px #cb00ff, 0 0 20px #cb00ff, 0 0 24px #cb00ff;
+  }
+  to {
+    box-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 
+    0 0 10px #cb00ff, 0 0 10px #cb00ff, 0 0 15px #cb00ff, 0 0 15px #cb00ff, 0 0 20px #cb00ff;
+  }
+}
 
+/*Items list*/
+.list {
+  color: white;
+  text-align: center;
+  font-family: 'Iceland', cursive;
+  font-size: 2em;
+}
 
+.xbox {
+  overflow: hidden;
+  transition: 0.2s;
+}
 
+.xbox:hover {
+  background: #7B07A0;
+  transition-delay: 0.2s;
+  box-shadow: 0 0 1em #7B07A0, 0 0 2em #7B07A0, 0 0 3em #7B07A0;
+}
+
+.steam {
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.steam:hover {
+  background: #7B07A0;
+  transition-delay: 0.2s;
+  box-shadow: 0 0 1em #7B07A0, 0 0 2em #7B07A0, 0 0 3em #7B07A0;
+}
+
+.pint {
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.pint:hover {
+  background: #7B07A0;
+  transition-delay: 0.2s;
+  box-shadow: 0 0 1em #7B07A0, 0 0 2em #7B07A0, 0 0 3em #7B07A0;
+}
+
+.insta {
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.insta:hover {
+  background: #7B07A0;
+  transition-delay: 0.2s;
+  box-shadow: 0 0 1em #7B07A0, 0 0 2em #7B07A0, 0 0 3em #7B07A0;
+}
+
+.redd {
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.redd:hover {
+  background: #7B07A0;
+  transition-delay: 0.2s;
+  box-shadow: 0 0 1em #7B07A0, 0 0 2em #7B07A0, 0 0 3em #7B07A0;
+}
+
+.spotify {
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.spotify:hover {
+  background: #7B07A0;
+  transition-delay: 0.2s;
+  box-shadow: 0 0 1em #7B07A0, 0 0 2em #7B07A0, 0 0 3em #7B07A0;
+}
+
+.yt {
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.yt:hover {
+  background: #7B07A0;
+  transition-delay: 0.2s;
+  box-shadow: 0 0 1em #7B07A0, 0 0 2em #7B07A0, 0 0 3em #7B07A0;
+}
 
 
