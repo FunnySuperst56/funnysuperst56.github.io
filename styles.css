@@ -70,11 +70,11 @@
 /*Reflection*/
 
 .border{
-  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+  -webkit-box-reflect: below 2.5em linear-gradient(transparent, rgba(255, 255, 255, 0.1));
 }
 
 .glow{
-  -webkit-text-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+  -webkit-text-reflect: below 2.5em linear-gradient(transparent, rgba(255, 255, 255, 0.1));
 }
 
 
