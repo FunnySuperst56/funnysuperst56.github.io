@@ -140,14 +140,14 @@
 }
 
 .button:hover:before {
-  width: 97%;
-  height: 97%;
+  border-top: 0.1em solid #FFF;
+  border-left: 0.1em solid #FFF;
+  width: 100%;
+  height: 100%;
   transition-delay: 0s;
 }
 
 .button:hover:before {
-  -webkit-animation: neon-button 1.5s ease-in-out infinite alternate;
-  animation: neon-button 1.5s ease-in-out infinite alternate;
   color: #ffffff;
 }
 
@@ -157,8 +157,6 @@
     0 0 13px #cb00ff, 0 0 13px #cb00ff, 0 0 18px #cb00ff, 0 0 18px #cb00ff, 0 0 18px #cb00ff;
   }
   to {
-    box-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 
-    0 0 10px #cb00ff, 0 0 10px #cb00ff, 0 0 15px #cb00ff, 0 0 15px #cb00ff, 0 0 15px #cb00ff;
   }
 }
 
@@ -175,14 +173,14 @@
 }
 
 .button:hover:after {
-  width: 97%;
-  height: 97%;
+  border-bottom: 0.1em solid #FFF;
+  border-right: 0.1em solid #FFF;
+  width: 100%;
+  height: 100%;
   transition-delay: 0s;
 }
 
 .button:hover:after {
-  -webkit-animation: neon-button 1.5s ease-in-out infinite alternate;
-  animation: neon-button 1.5s ease-in-out infinite alternate;
   color: #ffffff;
 }
 
@@ -198,7 +196,8 @@
 }
 
 .button:hover {
-  background: transparent;
+  -webkit-animation: neon-button 1.5s ease-in-out infinite alternate;
+  animation: neon-button 1.5s ease-in-out infinite alternate;
   color: #fff;
   box-shadow: 0 0 1em #7B07A0;
 }
