@@ -4,8 +4,9 @@
 	<title>UwU</title>
 	<body style="background-color: #08000e;">
 	<link rel="stylesheet" type="text/css" href="styles.css" />
-	<script type="text/javascript" src="controls.js"></script>
+	<script type="text/javascript" src="js/controls.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/ec9dc9741d.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="border">
@@ -21,6 +22,26 @@
 		<p id="pinterest" class="button" style="text-decoration:none;"><a href="https://pin.it/6yMP56y" target="_blank">Pinterest</a></p>
 		<p id="reddit" class="button" style="text-decoration:none;"><a href="https://www.reddit.com/user/funnysuperst56/" target="_blank">Reddit</a></p>
 		<p id="instagram" class="button" style="text-decoration:none;"><a href="https://www.instagram.com/funnysuper_56/" target="_blank">Instagram</a></p>
+	</div>
+
+	<div class="music-player">
+		<audio>
+			<source id="audio-Source" src="" type="audio/mpeg">
+		</audio>
+
+		<div class="duration">
+			<span id="duration-start">0:0</span>
+			<input type="range" min="0" max="100" value="0" id="duration-bar" onchange="change_duration()">
+			<span id="duration-update">0:0</span>
+		</div>
+
+		<div class="buttons-music">
+			<button onclick="previous_song()" id="previous"><i class="fa-solid fa-backward-step"></i></button>
+			<button onclick="play()" id="play-pause"><i class="fa-solid fa-play"></i></button>
+			<button onclick="next_song()" id="next"><i class="fa-solid fa-forward-step"></i></button>
+		</div>
+		
+		<span class="title" id="audio-Title">Title</span>
 	</div>
 </body>
 </html>

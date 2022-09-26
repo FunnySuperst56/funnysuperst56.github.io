@@ -3,6 +3,6 @@ XBOX.onclick = () {
         window.open("misc/i.xbox.html", "_blank");
 }
 
-#Xbox, #steam, #spotify, #pinterest, #reddit, #instagram{
+#Xbox, #steam, etc{
  cursor: pointer;
 }

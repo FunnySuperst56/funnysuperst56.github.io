@@ -185,3 +185,42 @@ a, a:link, a:visited, a:active{
     color: #7B07A0;
     text-decoration: none;
 }
+
+/*Music player*/
+.music-player{
+  font-family: 'Iceland', cursive;
+  background: #08000e;
+  text-align: center;
+  margin-top: 5em;
+}
+
+#duration-start{
+  font-size: 1.5em;
+  color: #7B07A0;
+}
+
+input[type="range"]{
+  cursor: pointer;
+}
+
+#duration-update{
+  font-size: 1.5em;
+  color: #7B07A0;
+}
+
+.buttons-music{
+  border: none;
+  display: flex;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  font-size: 1.5em;
+  color: #7B07A0;
+}
+
+
