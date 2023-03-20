@@ -25,23 +25,38 @@
 	</div>
 
 	<div class="music-player">
-		<audio>
-			<source id="audio-Source" src="" type="audio/mpeg">
+		<audio id="audio">
+			<source id="audio-Source" src="Songs/Symbolism.mp3" type="audio/mpeg">
 		</audio>
+		
+		<div class="music-info">
+			<h4 id="title">Name song</h4>
+			<div class="progress-container">
+				<div class="progress-line"></div>
+			</div>
+		</div>
 
-		<div class="duration">
-			<span id="duration-start">0:0</span>
-			<input type="range" min="0" max="100" value="0" id="duration-bar" onchange="change_duration()">
-			<span id="duration-update">0:0</span>
+		<div class="image">
+			<img src="Images/Symbolism.jpg" alt="music-cover" id="cover">
+		</div>
+
+		<div class="line-container">
+			<span id="duration-start">0:00</span>
+			<div class="line"></div>
+			<span id="duration-update">0:00</span>
 		</div>
 
 		<div class="buttons-music">
-			<button onclick="previous_song()" id="previous"><i class="fa-solid fa-backward-step"></i></button>
-			<button onclick="play()" id="play-pause"><i class="fa-solid fa-play"></i></button>
-			<button onclick="next_song()" id="next"><i class="fa-solid fa-forward-step"></i></button>
+			<button id="previous">
+				<i class="fas fa-backward-step"></i>
+			</button>
+			<button id="play-pause">
+				<i class="fas fa-play"></i>
+			</button>
+			<button id="next">
+				<i class="fas fa-forward-step"></i>
+			</button>
 		</div>
-		
-		<span class="title" id="audio-Title">Title</span>
 	</div>
 </body>
 </html>

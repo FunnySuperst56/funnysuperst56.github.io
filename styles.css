@@ -190,37 +190,79 @@ a, a:link, a:visited, a:active{
 .music-player{
   font-family: 'Iceland', cursive;
   background: #08000e;
-  text-align: center;
   margin-top: 5em;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border: 0.4em solid #fff;
+  border-radius: 0.6em;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px 5px 20px;
+  width: 45%;
 }
 
-#duration-start{
+.music-info h4{
+  position: relative;
   font-size: 1.5em;
   color: #7B07A0;
+  margin: 10px 0 2px 0;
 }
 
-input[type="range"]{
-  cursor: pointer;
+.image img{
+  width: 110px;
+  height: 110px;
+  border-radius: 2.8em;
+  object-fit: cover;
 }
 
+#duration-start,
 #duration-update{
   font-size: 1.5em;
   color: #7B07A0;
+  margin: 53%;
+}
+
+.line-container{
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 8px 0;
+  height: 4px;
+  width: 20%;
+  min-width: 300px;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.line{
+  background-color: #7B07A0;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
 }
 
 .buttons-music{
   border: none;
   display: flex;
   cursor: pointer;
-  outline: none;
-  transition: 0.5s;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.title{
-  font-size: 1.5em;
+.buttons-music #previous, 
+.buttons-music #play-pause,
+.buttons-music #next{
   color: #7B07A0;
+  background: transparent;
+  border-color: #7B07A0;
+  padding: 5px 10px;
+  margin: 10px 10px 10px;
+  display: inline-block;
 }
-
-
